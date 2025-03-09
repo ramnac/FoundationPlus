@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "FoundationPlus",
+    platforms: [
+        .iOS(.v17),  // Add minimum platform requirement
+        .macOS(.v14)  // Add macOS support
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
