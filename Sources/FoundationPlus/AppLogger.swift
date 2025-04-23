@@ -1,8 +1,8 @@
 //
 //  AppLogger.swift
-//  FoundationPlus
+//  iOSNetwork
 //
-//  Created by Ram on 08/03/2025.
+//  Created by Ram on 05/03/2025.
 //
 
 //Usage examples:
@@ -37,7 +37,7 @@ import Foundation
 
 public struct AppLogger {
     // MARK: - Log Categories
-    private static let subsystem = Bundle.main.bundleIdentifier ?? ""
+    private static let subsystem = Bundle.main.bundleIdentifier ?? "com.workfast.ai"
     
     public static let defaultLogger = Logger(subsystem: subsystem, category: "default")
     private static let networkLogger = Logger(subsystem: subsystem, category: "network")

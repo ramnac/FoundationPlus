@@ -1,8 +1,8 @@
 //
 //  KeychainWrapper.swift
-//  FoundationPlus
+//  iOSNetwork
 //
-//  Created by Ram on 08/03/2025.
+//  Created by Ram on 05/03/2025.
 //
 // Apple's article on secure store user's data:
 // https://developer.apple.com/documentation/security/keychain_services/keychain_items/using_the_keychain_to_manage_user_secrets
@@ -174,7 +174,7 @@ public enum KeychainWrapper {
         }
         
         // Add service name to make key more unique and secure
-        let bundleID = Bundle.main.bundleIdentifier ?? ""
+        let bundleID = Bundle.main.bundleIdentifier ?? "com.workfast.app"
         
         let keychainQuery: [String: Any] = [
             kSecClass as String: kSecClassGenericPassword,
