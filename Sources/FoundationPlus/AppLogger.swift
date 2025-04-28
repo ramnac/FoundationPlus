@@ -37,7 +37,7 @@ import Foundation
 
 public struct AppLogger {
     // MARK: - Log Categories
-    private static let subsystem = Bundle.main.bundleIdentifier ?? "com.workfast.ai"
+    private static let subsystem = Bundle.main.bundleIdentifier ?? ""
     
     public static let defaultLogger = Logger(subsystem: subsystem, category: "default")
     private static let networkLogger = Logger(subsystem: subsystem, category: "network")
